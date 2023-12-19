@@ -1,4 +1,8 @@
 /* Base styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0a192f; /* Dark blue background */
@@ -26,22 +30,30 @@ header {
 
 header h1 {
     color: #ccd6f6;
+    text-align: center;
 }
 
 /* Navigation styles */
 header nav ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #64ffda; /* Darker cyan color */
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #00b3a6; /* Even darker shade for hover state */
 }
 
 /* Intro section with a dynamic background */
@@ -64,44 +76,48 @@ header nav ul li a {
 
 /* Project cards */
 .project-card {
-    background: #0a192f; /* Dark blue */
-    border-radius: 8px;
+    background: #112240; /* Slightly lighter dark blue */
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 30px -10px #1d2733;
+    box-shadow: 0 10px 30px -10px #000000;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px -5px #1d2733;
+    box-shadow: 0 20px 40px -5px #000000;
 }
 
 .project-card h3 {
-    background: #112240;
     color: #64ffda;
-    padding: 1rem;
-    margin: 0;
+    font-size: 1.75rem;
 }
 
 .project-card p {
-    padding: 1rem;
-    background: #0a192f;
+    background: transparent;
     color: #8892b0;
     margin: 0;
+    padding: 1rem 0;
 }
 
 .project-card a {
-    display: inline-block;
-    padding: 1rem;
-    background: #112240;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #0a192f;
     color: #64ffda;
     text-decoration: none;
-    transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
 }
 
 .project-card a:hover {
-    background: #0a192f;
+    background-color: #112240;
+    border-color: #64ffda;
 }
 
 /* Footer */
@@ -113,4 +129,19 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .intro p {
+        margin: 20px;
+    }
 }
