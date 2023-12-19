@@ -25,7 +25,6 @@ header {
     background: linear-gradient(90deg, rgba(9,18,23,1) 0%, rgba(21,32,43,1) 100%);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
     padding: 1rem 0;
-    position: sticky;
     top: 0;
     z-index: 1000;
 }
