@@ -19,8 +19,6 @@ body {
 /* Adjust the header height and padding */
 header {
     background: #112240;
-    padding: 10px 0; /* Reduced vertical padding */
-    position: sticky;
     top: 0;
     z-index: 10;
 }
