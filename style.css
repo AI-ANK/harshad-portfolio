@@ -16,11 +16,37 @@ body {
 }
 
 /* Style the header */
+/* Adjust the header height and padding */
 header {
     background: #112240;
+    padding: 10px 0; /* Reduced vertical padding */
+    position: sticky;
     top: 0;
     z-index: 10;
 }
+
+/* Adjust the intro section height and padding */
+.intro {
+    padding: 20px 0; /* Reduced vertical padding */
+    background: #112240;
+    text-align: center;
+}
+
+/* If you have a separate container or title within the intro that needs adjustment */
+.intro h1 {
+    margin: 0; /* Removes default margin */
+    font-size: 1.75rem; /* Adjust font size as needed */
+    padding: 0 1rem; /* Horizontal padding only */
+}
+
+/* Similarly, adjust the paragraph spacing if needed */
+.intro p {
+    margin-top: 10px; /* Adds a bit of margin at the top */
+    margin-bottom: 10px; /* Adds a bit of margin at the bottom */
+    padding: 0 1rem; /* Horizontal padding only */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
 
 header h1 {
     color: #ccd6f6;
@@ -42,23 +68,6 @@ header nav ul li a {
     color: #64ffda; /* Darker cyan color */
 }
 
-/* Intro section with a dynamic background */
-.intro {
-    text-align: center;
-    padding: 4rem 0;
-    background: #112240;
-}
-
-.intro h1 {
-    color: #ccd6f6;
-    font-size: 2.5rem;
-}
-
-.intro p {
-    color: #8892b0;
-    max-width: 600px;
-    margin: 20px auto;
-}
 
 /* Project cards */
 .project-card {
