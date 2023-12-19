@@ -19,7 +19,6 @@ body {
 header {
     background: #112240;
     padding: 1rem 0;
-    position: sticky;
     top: 0;
     z-index: 10;
 }
