@@ -25,7 +25,6 @@ header {
 
 /* Adjust the intro section height and padding */
 .intro {
-    padding: 20px 0; /* Reduced vertical padding */
     background: #112240;
     text-align: center;
 }
