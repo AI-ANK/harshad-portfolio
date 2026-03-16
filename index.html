@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -35,6 +35,13 @@
     </div>
 
     <div class="hero__content">
+      <img
+        src="profile.jpg"
+        onerror="this.src='https://avatars.githubusercontent.com/u/130707158?v=4'"
+        alt="Harshad Suryawanshi"
+        class="hero__photo"
+      >
+
       <div class="hero__badge">
         <span class="hero__badge-dot"></span>
         Open to collaborations
@@ -105,7 +112,12 @@
         <article class="project-card reveal-item" data-project="1">
           <div class="project-card__visual proj-gradient--1" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// qdrant.vectorSearch(query)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">real-estate-search</span></div>
+              <div class="app-mockup__search"><span class="app-mockup__search-icon">⌕</span><span class="app-mockup__search-text">cozy 2BR near downtown under $3k</span></div>
+              <div class="app-mockup__row"><span class="app-mockup__icon">🏠</span><span class="app-mockup__line"><span class="app-mockup__line-title">Urban Loft, Mission District</span><span class="app-mockup__line-meta">$2,850/mo · 2bd · 98% match</span></span></div>
+              <div class="app-mockup__row"><span class="app-mockup__icon">🏠</span><span class="app-mockup__line"><span class="app-mockup__line-title">Modern Studio, SoMa</span><span class="app-mockup__line-meta">$2,650/mo · 1bd · 94% match</span></span></div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -139,7 +151,13 @@
         <article class="project-card reveal-item" data-project="2">
           <div class="project-card__visual proj-gradient--2" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// ragpipeline.configure()</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">RAGArch</span></div>
+              <div class="app-mockup__config-row"><span class="app-mockup__config-label">LLM</span><span class="app-mockup__config-select">GPT-4 ▾</span></div>
+              <div class="app-mockup__config-row"><span class="app-mockup__config-label">Embeddings</span><span class="app-mockup__config-select">bge-large ▾</span></div>
+              <div class="app-mockup__config-row"><span class="app-mockup__config-label">Vector Store</span><span class="app-mockup__config-select">Qdrant ▾</span></div>
+              <div class="app-mockup__btn">▶ Generate Code</div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -183,7 +201,12 @@
         <article class="project-card reveal-item" data-project="3">
           <div class="project-card__visual proj-gradient--3" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// voice.activate("C3")</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">C3 Voice Assistant</span></div>
+              <div class="app-mockup__chat-row app-mockup__chat-row--in"><span class="app-mockup__bubble app-mockup__bubble--in">Summarise the Nvidia 10-K report</span></div>
+              <div class="app-mockup__chat-row app-mockup__chat-row--out"><span class="app-mockup__bubble app-mockup__bubble--out">Nvidia reported $60B revenue in FY2023, driven by…</span></div>
+              <div class="app-mockup__voice"><span class="app-mockup__wave"></span><span class="app-mockup__mic">🎙 Say "C3" to activate</span></div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -227,7 +250,11 @@
         <article class="project-card reveal-item" data-project="4">
           <div class="project-card__visual proj-gradient--4" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// sql.fromNaturalLanguage(q)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">Na2SQL</span></div>
+              <div class="app-mockup__terminal-prompt"><span class="app-mockup__terminal-caret">›</span> Show top 5 customers by revenue</div>
+              <div class="app-mockup__terminal-sql"><span class="app-mockup__kw">SELECT</span> name, SUM(total) <span class="app-mockup__kw">AS</span> rev<br><span class="app-mockup__kw">FROM</span> orders <span class="app-mockup__kw">GROUP BY</span> name<br><span class="app-mockup__kw">ORDER BY</span> rev <span class="app-mockup__kw">DESC LIMIT</span> 5</div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -271,7 +298,11 @@
         <article class="project-card reveal-item" data-project="5">
           <div class="project-card__visual proj-gradient--5" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// vision.classify(image)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">AInimal Go!</span></div>
+              <div class="app-mockup__camera"><div class="app-mockup__camera-frame">🦁</div><div class="app-mockup__camera-hud"><span class="app-mockup__hud-badge">ResNet18</span><span class="app-mockup__hud-conf">Lion · 96.3% confidence</span></div></div>
+              <div class="app-mockup__animal-fact">📖 Lions are social animals living in groups called prides…</div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -305,7 +336,11 @@
         <article class="project-card reveal-item" data-project="6">
           <div class="project-card__visual proj-gradient--6" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// multimodal.caption(img)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">PaLM-Kosmos-Vision</span></div>
+              <div class="app-mockup__vision-row"><div class="app-mockup__img-box">🖼</div><div class="app-mockup__caption"><span class="app-mockup__caption-label">KOSMOS-2 Caption</span><span class="app-mockup__caption-text">A golden retriever playing on a sunny beach…</span></div></div>
+              <div class="app-mockup__chat-row app-mockup__chat-row--in"><span class="app-mockup__bubble app-mockup__bubble--in">What breed is this dog?</span></div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -349,7 +384,13 @@
         <article class="project-card reveal-item" data-project="7">
           <div class="project-card__visual proj-gradient--7" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// llm.analyze(10K_filing)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">Equity Research Analyst</span></div>
+              <div class="app-mockup__report-title">📄 NVDA — AI-Generated Research Report</div>
+              <div class="app-mockup__report-section"><span class="app-mockup__report-badge">§1</span> Executive Summary</div>
+              <div class="app-mockup__report-section"><span class="app-mockup__report-badge">§2</span> Risk Factors</div>
+              <div class="app-mockup__report-section"><span class="app-mockup__report-badge">§3</span> Financial Performance</div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
@@ -393,7 +434,12 @@
         <article class="project-card reveal-item" data-project="8">
           <div class="project-card__visual proj-gradient--8" aria-hidden="true">
             <div class="project-card__visual-pattern"></div>
-            <span class="project-card__visual-label font-mono">// semantic.search(listings)</span>
+            <div class="app-mockup">
+              <div class="app-mockup__bar"><span class="app-mockup__dot app-mockup__dot--r"></span><span class="app-mockup__dot app-mockup__dot--y"></span><span class="app-mockup__dot app-mockup__dot--g"></span><span class="app-mockup__chip">Airbnb Explorer</span></div>
+              <div class="app-mockup__search"><span class="app-mockup__search-icon">⌕</span><span class="app-mockup__search-text">cozy beach place for family of 4</span></div>
+              <div class="app-mockup__row"><span class="app-mockup__icon">🏖</span><span class="app-mockup__line"><span class="app-mockup__line-title">Beachfront Villa, Malibu</span><span class="app-mockup__line-meta">$420/night · 4 guests · 97% match</span></span></div>
+              <div class="app-mockup__row"><span class="app-mockup__icon">🌴</span><span class="app-mockup__line"><span class="app-mockup__line-title">Ocean Cottage, Santa Monica</span><span class="app-mockup__line-meta">$310/night · 4 guests · 93% match</span></span></div>
+            </div>
           </div>
           <div class="project-card__body">
             <div class="project-card__header">
