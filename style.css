@@ -453,6 +453,25 @@ ul, ol {
   font-weight: 400;
 }
 
+.stat-card__github-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px 3px 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #e3b341;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card__github-badge svg {
+  color: #e3b341;
+  flex-shrink: 0;
+}
+
 /* ── Section Header ────────────────────────────────────────── */
 .section-header {
   margin-bottom: 3rem;
