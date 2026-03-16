@@ -682,6 +682,335 @@ ul, ol {
   border-color: var(--color-border-hover);
 }
 
+/* ── Hero Photo ────────────────────────────────────────────── */
+.hero__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.15), 0 0 40px rgba(0, 112, 243, 0.2);
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── App Mockup ────────────────────────────────────────────── */
+.app-mockup {
+  position: absolute;
+  inset: 8px;
+  background: rgba(0, 0, 0, 0.62);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.app-mockup__bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.app-mockup__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.app-mockup__dot--r { background: #ff5f57; }
+.app-mockup__dot--y { background: #febc2e; }
+.app-mockup__dot--g { background: #28c840; }
+
+.app-mockup__chip {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: 4px;
+  letter-spacing: 0.03em;
+}
+
+/* Search bar */
+.app-mockup__search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 3px 7px;
+}
+.app-mockup__search-icon { font-size: 0.7rem; color: rgba(255,255,255,0.4); }
+.app-mockup__search-text {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Result rows (real estate / airbnb) */
+.app-mockup__row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  padding: 4px 7px;
+}
+.app-mockup__icon { font-size: 0.85rem; line-height: 1; flex-shrink: 0; }
+.app-mockup__line {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+.app-mockup__line-title {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.app-mockup__line-meta {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--color-success);
+}
+
+/* RAGArch config rows */
+.app-mockup__config-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.app-mockup__config-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+}
+.app-mockup__config-select {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+.app-mockup__btn {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: #fff;
+  background: var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* C3 Voice - chat bubbles */
+.app-mockup__chat-row {
+  display: flex;
+}
+.app-mockup__chat-row--in { justify-content: flex-start; }
+.app-mockup__chat-row--out { justify-content: flex-end; }
+.app-mockup__bubble {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  padding: 3px 7px;
+  border-radius: 8px;
+  max-width: 85%;
+  line-height: 1.4;
+}
+.app-mockup__bubble--in {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom-left-radius: 2px;
+}
+.app-mockup__bubble--out {
+  background: var(--color-accent);
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+.app-mockup__voice {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+.app-mockup__wave {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.app-mockup__wave::before,
+.app-mockup__wave::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  border-radius: 1px;
+  background: var(--color-success);
+  animation: wave-bar 1s ease-in-out infinite alternate;
+}
+.app-mockup__wave::before { height: 8px; }
+.app-mockup__wave::after  { height: 5px; animation-delay: 0.3s; }
+@keyframes wave-bar {
+  from { transform: scaleY(0.5); }
+  to   { transform: scaleY(1.5); }
+}
+.app-mockup__mic {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--color-success);
+}
+
+/* Na2SQL terminal */
+.app-mockup__terminal-prompt {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.65);
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  padding: 3px 7px;
+}
+.app-mockup__terminal-caret {
+  color: var(--color-success);
+  margin-right: 4px;
+}
+.app-mockup__terminal-sql {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0,0,0,0.3);
+  border-radius: var(--radius-sm);
+  padding: 5px 8px;
+  border-left: 2px solid var(--color-accent);
+}
+.app-mockup__kw { color: #7dd3fc; }
+
+/* AInimal Go camera */
+.app-mockup__camera {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.app-mockup__camera-frame {
+  font-size: 1.6rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.05);
+  flex-shrink: 0;
+}
+.app-mockup__camera-hud {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.app-mockup__hud-badge {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 3px;
+  width: fit-content;
+}
+.app-mockup__hud-conf {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--color-success);
+}
+.app-mockup__animal-fact {
+  font-family: var(--font-mono);
+  font-size: 0.57rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* PaLM-Kosmos vision */
+.app-mockup__vision-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+.app-mockup__img-box {
+  font-size: 1.4rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.05);
+  flex-shrink: 0;
+}
+.app-mockup__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.app-mockup__caption-label {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--color-accent);
+}
+.app-mockup__caption-text {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.4;
+}
+
+/* Equity Research report */
+.app-mockup__report-title {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2px;
+}
+.app-mockup__report-section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.5);
+  padding: 2px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.app-mockup__report-badge {
+  font-size: 0.55rem;
+  background: rgba(0, 112, 243, 0.25);
+  color: var(--color-accent);
+  padding: 1px 4px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
 /* ── Footer ────────────────────────────────────────────────── */
 .footer {
   border-top: 1px solid var(--color-border);
