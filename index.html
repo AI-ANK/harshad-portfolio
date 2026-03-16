@@ -1,183 +1,453 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harshad Suryawanshi — AI/ML Engineer specializing in RAG pipelines, vector search, and large language models.">
+  <title>Harshad Suryawanshi — AI Engineer</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshad Suryawanshi's AI Projects</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            border-bottom: #2980b9 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header ul li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        .ai-theme-background {
-            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-            color: white;
-        }
-        .intro {
-            padding: 15px 0;
-            text-align: center;
-        }
-        .intro h1, .intro p {
-            margin-bottom: 10px;
-        }
-        .projects {
-            margin: 20px 0;
-            padding: 20px 0;
-            background: #fff;
-        }
-        .projects h2, .projects p {
-            margin-bottom: 5px;
-        }
-        .projects a {
-            text-decoration: none;
-            color: #d9cfcf;
-        }
-        .projects a:hover {
-            color: #2980b9;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>   
-        <div class="container">
-            <div >
-                <h1>Harshad Suryawanshi's AI Projects</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="#projects">Projects</a></li>
-                    <li><a href="https://www.linkedin.com/in/harshadsuryawanshi/">LinkedIn</a></li>
-                </ul>
-            </nav>
+
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav id="nav" class="nav" aria-label="Primary navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Home">HS</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="https://github.com/AI-ANK" class="nav__link nav__link--cta" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────── -->
+  <section id="about" class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Open to collaborations
+      </div>
+
+      <h1 class="hero__name">Harshad Suryawanshi</h1>
+
+      <div class="hero__role" aria-live="polite">
+        <span class="hero__role-prefix">I build&nbsp;</span><span id="typewriter" class="hero__role-typewriter"></span><span class="hero__cursor" aria-hidden="true">|</span>
+      </div>
+
+      <p class="hero__bio">
+        AI/ML Engineer crafting intelligent systems with RAG pipelines, vector search, and large language models.
+        8 open-source projects. 300+ combined GitHub stars.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="https://github.com/AI-ANK" class="btn btn--ghost" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/harshadsuryawanshi/" class="btn btn--ghost" target="_blank" rel="noopener">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ──────────────────────────────────────── -->
+  <section id="stats" class="stats" aria-label="Portfolio statistics">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat-card reveal-item">
+          <span class="stat-card__number">300+</span>
+          <span class="stat-card__label">GitHub Stars</span>
         </div>
-    </header>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <p>Below are some of my Generative AI projects:</p>
-
-            <div class="project-card">
-            <!-- Project 1 -->
-            <h3>AI Real Estate Search - Powered by Qdrant and Llamaindex</h3>
-            <p>This tool transforms how users search for houses, moving beyond traditional keyword-based engines. By leveraging advanced capabilities of Qdrant and LlamaIndex, it uses a combination of Vector Similarity Search, LLM and Text-to-SQL to searching for properties using natural human language.</p>
-            <a href="https://www.linkedin.com/posts/harshadsuryawanshi_ai-real-estate-search-qdrant-llamaindex-activity-7163362880271073280-2fRq?utm_source=share&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://huggingface.co/spaces/AI-ANK/AI-Real-Estate-Search-Qdrant-Llamaindex" target="_blank">Live Demo</a>
-            </div>
-
-            <div class="project-card">
-            <!-- Project 1 -->
-            <h3>RAGArch: No-Code RAG Pipeline Configuration & One-Click RAG Code Generation Tool </h3>
-            <p>RAGArch – a tool designed to simplify the process of configuring and building Retrieval-Augmented Generation (RAG) pipelines. Utilizing the power of Llamaindex, RAGArch facilitates the testing of different configurations to see how they perform. Once satisfied, users can generate the Python code for their custom RAG pipeline configurations, enabling easy integration into their applications.</p>
-            <a href="https://www.linkedin.com/posts/harshadsuryawanshi_rag-streamlit-llamaindex-activity-7157041300544860160-Y9Tl?utm_source=share&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://huggingface.co/spaces/AI-ANK/RAGArch" target="_blank">Live Demo</a>
-            </div>
-            
-            <div class="project-card">
-            <!-- Project 1 -->
-            <h3>C3 Voice Assistant</h3>
-            <p>A project that brings the power of Large Language Models (LLM) and Retrieval-Augmented Generation (RAG) within reach of everyone, particularly emphasizing accessibility. My goal is to democratize access to advanced AI technologies, ensuring inclusivity for users who may face challenges with traditional text-based interfaces.</p>
-            <a href="https://www.linkedin.com/posts/harshadsuryawanshi_ai-llamaindex-gpt3-activity-7149796976442740736-1lXj" target="_blank">Project Details</a>
-            <a href="https://c3-ui.vercel.app/" target="_blank">Live Demo</a>
-            </div>
-
-            <div class="project-card">
-            <!-- Project 1 -->
-            <h3>Na2SQL</h3>
-            <p>Na2SQL, showcases a game-changing concept in database interrogation and insight extraction. It allows users to interact with huge and complex databases using simple conversational natural language queries. The best part? ZERO knowledge of SQL is required.</p>
-            <a href="https://www.linkedin.com/posts/llamaindex_build-an-e2e-sql-analyst-app-on-streamlit-ugcPost-7142241788534136832-Dzts?utm_source=combined_share_message&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://na2sql.streamlit.app/" target="_blank">Live Demo</a>
-            <a href="https://miro.com/app/embed/uXjVN_Q6iso=/?pres=1&frameId=3458764574173886178&embedId=706869089699">App Flow Diagram</a>
-            </div>
-
-            <div class="project-card">
-            <!-- Project 2 -->
-            <h3>AInimal Go</h3>
-            <p>Presenting 'AInimal Go!'- A Pokémon Go-Inspired App built without GPT-4V. Powered by LlamaIndex, ResNet18, Cohere LLM and Wikipedia. It showcases synergy between specialized deep learning vision models(like ResNet) and LLMs. This project highlights the idea that not all multi-modal RAG use cases necessitate GPT-4V.</p>
-            <a href="https://www.linkedin.com/posts/llamaindex_featuring-ainimal-go-build-a-pokemon-go-ugcPost-7135012921423577088-VgbS?utm_source=combined_share_message&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://huggingface.co/spaces/AI-ANK/AInimal_Go" target="_blank">Live Demo</a>
-            <a href="https://miro.com/app/embed/uXjVN_VyOMY=/?pres=1&frameId=3458764574184274814&embedId=831305973312">App Flow Diagram</a>
-            </div>
-
-            <div class="project-card">
-            <!-- Project 3 -->
-            <h3>Palm-Kosmos-Vision: My own GPT-4V</h3>
-            <p>My own version of GPT-4V that leverages automatic captioning, conversational AI, and a streamlined UI/UX. Built using PaLM API and Kosmos</p>
-            <a href="https://www.linkedin.com/posts/llamaindex_want-to-build-your-own-gpt-4v-experience-ugcPost-7128111047256772608-qYLJ?utm_source=combined_share_message&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://huggingface.co/spaces/AI-ANK/PalmKosmosVision" target="_blank">Live Demo</a>
-            </div>
-
-            <div class="project-card">
-            <!-- Project 4 -->
-            <h3>AI Equity Research Analyst</h3>
-            <p>An AI powered equity research report genrator that exemplifies the potential of Large Language Models to transform complex data into actionable insights.</p>
-            <a href="https://www.linkedin.com/posts/llamaindex_ai-generated-equity-research-report-activity-7122628418977861633--Tvg?utm_source=combined_share_message&utm_medium=member_desktop" target="_blank">Project Details</a>
-            <a href="https://ai-eqty-rsrch-anlyst.streamlit.app/" target="_blank">Live Demo</a>
-            </div>
+        <div class="stat-card reveal-item">
+          <span class="stat-card__number">8</span>
+          <span class="stat-card__label">Open Source Projects</span>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2023 Harshad Suryawanshi. All rights reserved.</p>
+        <div class="stat-card reveal-item">
+          <span class="stat-card__number">90+</span>
+          <span class="stat-card__label">Total Forks</span>
         </div>
-    </footer>
+        <div class="stat-card reveal-item">
+          <span class="stat-card__number">6+</span>
+          <span class="stat-card__label">AI Frameworks Used</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ───────────────────────────────────── -->
+  <section id="projects" class="projects">
+    <div class="container">
+
+      <div class="section-header reveal-item">
+        <span class="section-header__label">Open Source</span>
+        <h2 class="section-header__title">Featured Projects</h2>
+        <p class="section-header__subtitle">Production-grade AI systems built with modern LLM tooling</p>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- Card 1: AI Real Estate Search -->
+        <article class="project-card reveal-item" data-project="1">
+          <div class="project-card__visual proj-gradient--1" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// qdrant.vectorSearch(query)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">AI Real Estate Search</h3>
+            </div>
+            <p class="project-card__desc">
+              Transforms property search with natural language — ask in plain English, get semantically matched listings. Combines vector similarity, LLM reasoning, and SQL for hybrid retrieval.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Vector similarity search via Qdrant for semantic matching</li>
+              <li>Text-to-SQL for structured property filters (beds, price, location)</li>
+              <li>LlamaIndex orchestration layer for multi-step LLM reasoning</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">Qdrant</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">Python</span>
+              <span class="badge">Text-to-SQL</span>
+              <span class="badge">Vector Search</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/AI-Real-Estate-Search" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View AI Real Estate Search on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: RAGArch -->
+        <article class="project-card reveal-item" data-project="2">
+          <div class="project-card__visual proj-gradient--2" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// ragpipeline.configure()</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">RAGArch</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  88
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  23
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              No-code RAG pipeline configurator — test any combination of LLMs, embedding models, and vector stores, then export production-ready Python code in one click.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Interactive UI to compare LLM + embedding + vector store combinations</li>
+              <li>One-click export of production Python code for custom RAG setups</li>
+              <li>Supports GPT-3.5/4, Gemini Pro, Cohere, Pinecone, Qdrant, and more</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">Streamlit</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">Python</span>
+              <span class="badge">RAG</span>
+              <span class="badge">No-Code</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/RAGArch" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View RAGArch on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: C3 Voice Assistant -->
+        <article class="project-card reveal-item" data-project="3">
+          <div class="project-card__visual proj-gradient--3" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// voice.activate("C3")</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">C3 Voice Assistant</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  38
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  13
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Voice-first LLM + RAG interface designed for accessibility. Say "C3" to activate — no typing required. Built for users who struggle with traditional text-based AI interfaces.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Wake-word activation ("C3") with real-time voice transcription</li>
+              <li>RAG over documents (Nvidia 10-K report) + general LLM queries</li>
+              <li>React.js frontend paired with Python Flask + LlamaIndex CreateLlama backend</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">React.js</span>
+              <span class="badge">Flask</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">Voice AI</span>
+              <span class="badge">RAG</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/C3-Voice-Assistant-UI" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View C3 Voice Assistant on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Na2SQL -->
+        <article class="project-card reveal-item" data-project="4">
+          <div class="project-card__visual proj-gradient--4" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// sql.fromNaturalLanguage(q)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Na2SQL</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  76
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  21
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Zero SQL knowledge required. Query complex databases using plain conversational language — Na2SQL translates your question into accurate SQL and returns interpreted results.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Natural language → SQL via OpenAI GPT-3.5 + LlamaIndex SQLDatabase</li>
+              <li>End-to-end ecommerce database demo included out of the box</li>
+              <li>50+ commits of iterative refinement for edge-case accuracy</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">OpenAI</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Python</span>
+              <span class="badge">Streamlit</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/Na2SQL" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View Na2SQL on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: AInimal Go -->
+        <article class="project-card reveal-item" data-project="5">
+          <div class="project-card__visual proj-gradient--5" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// vision.classify(image)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">AInimal Go</h3>
+            </div>
+            <p class="project-card__desc">
+              Pokémon Go-inspired animal identifier that proves powerful multimodal AI doesn't require GPT-4V. Snap an animal photo — get an AI-generated fact card powered by ResNet + LLM + Wikipedia.
+            </p>
+            <ul class="project-card__highlights">
+              <li>ResNet18 deep learning vision model for species classification</li>
+              <li>Cohere LLM + Wikipedia for rich, contextual animal fact generation</li>
+              <li>LlamaIndex orchestrates multi-source retrieval without GPT-4V</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">ResNet18</span>
+              <span class="badge">Cohere</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">Wikipedia</span>
+              <span class="badge">Python</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/AInimal-Go" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View AInimal Go on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: PaLM-Kosmos-Vision -->
+        <article class="project-card reveal-item" data-project="6">
+          <div class="project-card__visual proj-gradient--6" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// multimodal.caption(img)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">PaLM-Kosmos-Vision</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  16
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  11
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              A custom GPT-4V alternative built from open models. Upload an image, get an automatic caption from KOSMOS-2, then hold a full conversation about it using PaLM.
+            </p>
+            <ul class="project-card__highlights">
+              <li>KOSMOS-2 for automatic image captioning via Replicate API</li>
+              <li>Google PaLM for contextual multi-turn conversation about images</li>
+              <li>Session-based chat history with reset — accessible Streamlit UI</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">PaLM API</span>
+              <span class="badge">KOSMOS-2</span>
+              <span class="badge">Replicate</span>
+              <span class="badge">Streamlit</span>
+              <span class="badge">Multimodal</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/PaLM-Kosmos-Vision" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View PaLM-Kosmos-Vision on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: AI Equity Research Analyst -->
+        <article class="project-card reveal-item" data-project="7">
+          <div class="project-card__visual proj-gradient--7" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// llm.analyze(10K_filing)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">AI Equity Research Analyst</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  36
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  15
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              LLM-powered analyst that reads NYSE 10-K filings and generates comprehensive equity research reports. Turns hundreds of pages of dense financial text into actionable insights.
+            </p>
+            <ul class="project-card__highlights">
+              <li>SubQuestionQueryEngine decomposes complex research into focused sub-queries</li>
+              <li>Google PaLM API + bge-small-en embeddings over pre-indexed 10-K documents</li>
+              <li>67 commits — covers 7 major NYSE companies with pre-built vector indexes</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">Google PaLM</span>
+              <span class="badge">LlamaIndex</span>
+              <span class="badge">BGE Embeddings</span>
+              <span class="badge">Python</span>
+              <span class="badge">Finance</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/ai-equity-research-analyst" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View AI Equity Research Analyst on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Airbnb Listing Explorer -->
+        <article class="project-card reveal-item" data-project="8">
+          <div class="project-card__visual proj-gradient--8" aria-hidden="true">
+            <div class="project-card__visual-pattern"></div>
+            <span class="project-card__visual-label font-mono">// semantic.search(listings)</span>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Airbnb Listing Explorer</h3>
+              <div class="project-card__stats">
+                <span class="project-stat" title="GitHub Stars">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  29
+                </span>
+                <span class="project-stat" title="Forks">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v3m0 0l-4 4m4-4l4 4"/></svg>
+                  7
+                </span>
+              </div>
+            </div>
+            <p class="project-card__desc">
+              Semantic search for Airbnb listings that understands intent, not just keywords. Ask for "a cozy place near the beach for a family of four" and get semantically matched results.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Qdrant vector database + FastEmbed for lightweight, fast embeddings</li>
+              <li>Mixtral 7Bx8 via Groq API for high-speed LLM inference</li>
+              <li>LlamaIndex orchestrates retrieval + LLM reasoning pipeline</li>
+            </ul>
+            <div class="project-card__tech">
+              <span class="badge">Qdrant</span>
+              <span class="badge">Groq API</span>
+              <span class="badge">Mixtral</span>
+              <span class="badge">FastEmbed</span>
+              <span class="badge">LlamaIndex</span>
+            </div>
+            <div class="project-card__footer">
+              <a href="https://github.com/AI-ANK/Airbnb-Listing-Explorer" class="btn btn--sm btn--outline" target="_blank" rel="noopener" aria-label="View Airbnb Listing Explorer on GitHub">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.087.636-1.337-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">&copy; 2024 Harshad Suryawanshi</span>
+      <div class="footer__links">
+        <a href="https://github.com/AI-ANK" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/harshadsuryawanshi/" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
